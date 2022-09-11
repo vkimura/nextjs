@@ -1,8 +1,12 @@
+//rafce
 import Head from 'next/head'
 import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
 import Document from './_document'
 import Hero from '../components/Hero'
+import { SliderData } from '../components/SliderData'
+import Slider from '../components/Slider'
+import Instagram from '../components/Instagram'
 
 export default function Home() {
   return (
@@ -13,6 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero heading='Capture Jesus' message='He captures me and keeps me alive.' />
+      <Slider slides={SliderData} />
+      <Instagram />
     </div>
   )
 }
